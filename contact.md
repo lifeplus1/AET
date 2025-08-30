@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact Us - Ascension Energy Technologies
+permalink: /contact/
 ---
 
 ## Contact Us

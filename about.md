@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Ascension Energy Technologies
+permalink: /about/
 ---
 
 <!-- Removed duplicate H1 to resolve MD025 error -->
