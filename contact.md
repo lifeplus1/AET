@@ -3,7 +3,7 @@ layout: page
 title: Contact Us - Ascension Energy Technologies
 ---
 
-# Contact Us
+## Contact Us
 
 We welcome questions, feedback, and discussions from fellow explorers of energy technologies and consciousness studies. Whether you're curious about a specific topic from our blog, interested in learning more about our store items, or simply want to connect with like-minded individuals, we'd love to hear from you.
 
@@ -64,6 +64,16 @@ A: While we can provide general educational guidance, we always recommend priori
 ## Connect with Our Community
 
 While we maintain a focused approach to our content and community, we're always interested in connecting with serious researchers, practitioners, and educators in the field of energy technologies.
+
+### Social Engagement
+
+For ongoing discussions and community updates, you can also find us on:
+
+- **Blog Comments**: Engage directly with our blog posts to share insights and ask questions
+- **Educational Forums**: We participate in various energy technology and consciousness research forums
+- **Research Networks**: Connect with us through academic and alternative research communities
+
+*Note: We prioritize meaningful engagement over broad social media presence, focusing on quality discussions rather than large followings.*
 
 ### Research Collaboration
 

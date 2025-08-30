@@ -3,7 +3,7 @@ layout: default
 title: Welcome to Ascension Energy Technologies
 ---
 
-# Welcome to Ascension Energy Technologies
+## Welcome to Ascension Energy Technologies
 
 ## Exploring Energy, Consciousness, and Ascension
 

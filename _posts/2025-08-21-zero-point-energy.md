@@ -29,6 +29,7 @@ The relationship between ZPE and consciousness studies suggests that these quant
 ZPE concepts emerged from quantum mechanics in the early 20th century, with pioneers like Max Planck and Werner Heisenberg laying the theoretical groundwork. Later researchers like Tom Bearden, Hal Puthoff, and others proposed devices to harness it, building on established quantum principles.
 
 Key historical milestones include:
+
 - **1900s**: Planck's quantum theory introduces the concept of zero-point oscillations
 - **1940s**: Hendrik Casimir predicts the Casimir Effect, providing evidence for vacuum energy
 - **1970s-1980s**: Researchers begin exploring practical applications of vacuum energy
@@ -70,6 +71,7 @@ The quest to understand and potentially harness zero-point energy represents hum
 ## Further Exploration
 
 To learn more about zero-point energy:
+
 - Study quantum field theory and vacuum physics
 - Explore alternative energy research communities and forums
 - Follow peer-reviewed research on vacuum energy and the Casimir Effect
