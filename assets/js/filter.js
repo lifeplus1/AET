@@ -1,134 +1,193 @@
-// Category filtering functionality
+// Enhanced Category filtering with performance optimizations
 document.addEventListener('DOMContentLoaded', function() {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const postCards = document.querySelectorAll('.post-card');
   
   if (filterButtons.length === 0 || postCards.length === 0) return;
 
-  // Filter posts by category
-  function filterPosts(category) {
-    postCards.forEach(card => {
-      const cardCategory = card.getAttribute('data-category');
-      
-      if (category === 'all' || cardCategory === category) {
-        card.style.display = 'block';
-        // Add fade in animation
-        card.style.opacity = '0';
-        setTimeout(() => {
-          card.style.opacity = '1';
-        }, 100);
-      } else {
-        card.style.display = 'none';
-      }
-    });
-    
-    // Update active button
-    filterButtons.forEach(btn => {
-      btn.classList.remove('active');
-    });
-    
-    const activeButton = document.querySelector(`[data-category="${category}"]`);
-    if (activeButton) {
-      activeButton.classList.add('active');
-    }
-    
-    // Show count of visible posts
-    updatePostCount(category);
+  // Cache DOM elements and create optimized filter system
+  const postsGrid = document.querySelector('.posts-grid');
+  let activeCategory = 'all';
+  
+  // Use DocumentFragment for efficient DOM manipulation
+  const hiddenContainer = document.createElement('div');
+  hiddenContainer.style.display = 'none';
+  document.body.appendChild(hiddenContainer);
+
+  // Debounce function for performance
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
   }
 
-  // Update post count display
-  function updatePostCount(category) {
-    const visiblePosts = document.querySelectorAll('.post-card[style*="display: block"], .post-card:not([style])').length;
+  // Optimized filter function using requestAnimationFrame
+  function filterPosts(category) {
+    if (activeCategory === category) return; // Avoid unnecessary work
+    
+    activeCategory = category;
+    const visibleCards = [];
+    const hiddenCards = [];
+    
+    // Batch DOM reads and writes
+    requestAnimationFrame(() => {
+      // Read phase - collect elements
+      postCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (category === 'all' || cardCategory === category) {
+          visibleCards.push(card);
+        } else {
+          hiddenCards.push(card);
+        }
+      });
+      
+      // Write phase - update DOM
+      requestAnimationFrame(() => {
+        // Hide cards first
+        hiddenCards.forEach(card => {
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.95)';
+        });
+        
+        // Then show visible cards with staggered animation
+        setTimeout(() => {
+          hiddenCards.forEach(card => {
+            card.style.display = 'none';
+          });
+          
+          visibleCards.forEach((card, index) => {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            }, index * 50); // Staggered entrance
+          });
+        }, 200);
+      });
+    });
+    
+    updateActiveButton(category);
+    debouncedUpdateCount(category, visibleCards.length);
+  }
+
+  // Efficient button state management
+  function updateActiveButton(category) {
+    filterButtons.forEach(btn => {
+      const isActive = btn.getAttribute('data-category') === category;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', isActive);
+    });
+  }
+
+  // Optimized post count update
+  const debouncedUpdateCount = debounce((category, visibleCount) => {
     const totalPosts = postCards.length;
     
-    // Find or create count display
     let countDisplay = document.querySelector('.posts-count');
     if (!countDisplay) {
       countDisplay = document.createElement('div');
       countDisplay.className = 'posts-count';
-      const postsGrid = document.querySelector('.posts-grid');
-      if (postsGrid) {
-        postsGrid.parentNode.insertBefore(countDisplay, postsGrid);
-      }
+      countDisplay.setAttribute('aria-live', 'polite');
+      postsGrid.parentNode.insertBefore(countDisplay, postsGrid);
     }
     
-    if (category === 'all') {
-      countDisplay.textContent = `Showing all ${totalPosts} posts`;
-    } else {
-      countDisplay.textContent = `Showing ${visiblePosts} posts in "${category}"`;
-    }
-  }
+    const message = category === 'all' 
+      ? `Showing all ${totalPosts} posts`
+      : `Showing ${visibleCount} posts in "${category}"`;
+    
+    countDisplay.textContent = message;
+  }, 100);
 
-  // Add click event listeners to filter buttons
+  // Add optimized event listeners with passive option
   filterButtons.forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
       const category = this.getAttribute('data-category');
       filterPosts(category);
+    }, { passive: true });
+    
+    // Add keyboard support
+    button.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const category = this.getAttribute('data-category');
+        filterPosts(category);
+      }
     });
   });
 
-  // Initialize with all posts visible
-  filterPosts('all');
-  
-  // Add smooth transitions
-  postCards.forEach(card => {
-    card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+  // Initialize with smooth entrance animation
+  requestAnimationFrame(() => {
+    postCards.forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, index * 100);
+    });
   });
+  
+  // Performance: Use Intersection Observer for lazy loading if many posts
+  if (postCards.length > 12) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '50px',
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    postCards.forEach(card => {
+      observer.observe(card);
+    });
+  }
 });
 
-// Add CSS for filtering with cosmic theme
-const filterCSS = `
-.posts-count {
-  color: rgba(245, 232, 199, 0.8);
-  font-style: italic;
-  margin: 1em 0;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
+// Optimized CSS injection (only if not already present)
+if (!document.querySelector('#filter-optimization-css')) {
+  const style = document.createElement('style');
+  style.id = 'filter-optimization-css';
+  style.textContent = `
+    .posts-count {
+      color: rgba(245, 232, 199, 0.8);
+      font-style: italic;
+      margin: 1.5em 0;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
 
-.post-card {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
+    .post-card {
+      transition: 
+        opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    .post-card.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-.filter-btn {
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+    @media (prefers-reduced-motion: reduce) {
+      .post-card {
+        transition: none !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
 }
-
-.filter-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
-  transition: left 0.5s;
-}
-
-.filter-btn:hover::before,
-.filter-btn.active::before {
-  left: 100%;
-}
-
-@media (max-width: 768px) {
-  .category-filter {
-    justify-content: center;
-  }
-  
-  .filter-btn {
-    font-size: 0.9em;
-    padding: 6px 12px;
-  }
-  
-  .posts-count {
-    font-size: 0.9em;
-  }
-}
-`;
-
-// Inject CSS
-const style = document.createElement('style');
-style.textContent = filterCSS;
-document.head.appendChild(style);
