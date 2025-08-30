@@ -53,4 +53,4 @@ The Casimir Effect stands as a testament to the hidden potential within the quan
 
 To deepen your understanding, explore quantum field theory texts or visit science museums with nanotechnology exhibits. Online resources, such as academic papers on the Casimir Effect or videos on quantum vacuum energy, can provide clarity. For related concepts, read our blog posts on *Zero-Point Energy Devices*, *Ken Shoulders' Vacuum Charge Clusters*, or *Rodin Coils* for a blend of practical and spiritual perspectives. Consider experimenting with crystals from our store to explore vibrational resonance, or join alternative science forums to discuss the Casimir Effect's broader implications.
 
-[Learn about related tools in our Store](/store/)
+[Learn about related tools in our Store]({{ '/store/' | relative_url }})

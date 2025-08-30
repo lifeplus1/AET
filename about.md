@@ -71,4 +71,4 @@ We believe that understanding the deeper principles of energy and consciousness 
 
 We welcome questions, feedback, and discussions from fellow explorers of energy technologies and consciousness studies.
 
-[Contact Us](/contact) for more information, or explore our [Blog](/blog) to begin your journey into the fascinating world of ascension energy technologies.
+[Contact Us]({{ '/contact' | relative_url }}) for more information, or explore our [Blog]({{ '/blog' | relative_url }}) to begin your journey into the fascinating world of ascension energy technologies.

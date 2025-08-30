@@ -12,7 +12,7 @@ Our crystal collection features natural specimens selected for their educational
 
 Crystals have fascinated humans for millennia, not just for their beauty but for their unique physical properties. Many crystals exhibit piezoelectric effects, generating electrical charge when subjected to mechanical stress. This property makes them valuable for both scientific study and energy work.
 
-As discussed in our [Crystal-Grid Technologies blog posts](/blog), crystals can demonstrate fundamental principles of vibration and resonance. When arranged in geometric patterns, they may amplify and direct energy in ways that complement our understanding of toroidal fields and harmonic frequencies.
+As discussed in our [Crystal-Grid Technologies blog posts]({{ '/blog' | relative_url }}), crystals can demonstrate fundamental principles of vibration and resonance. When arranged in geometric patterns, they may amplify and direct energy in ways that complement our understanding of toroidal fields and harmonic frequencies.
 
 ### Available Crystals
 
@@ -21,7 +21,7 @@ As discussed in our [Crystal-Grid Technologies blog posts](/blog), crystals can 
 - **Properties**: Amplification, clarity, programmability
 - **Educational Use**: Excellent for studying piezoelectric effects and energy amplification
 - **Size Range**: Small specimens (1-2 inches) to larger display pieces
-- **Connection**: Referenced in our [Casimir Effect](/blog/2025/08/18/casimir-effect/) post for its quantum resonance properties
+- **Connection**: Referenced in our [Casimir Effect]({{ '/blog/2025/08/18/casimir-effect/' | relative_url }}) post for its quantum resonance properties
 
 #### Amethyst
 
@@ -87,10 +87,10 @@ We also offer guidance on creating crystal grids based on sacred geometry princi
 
 Our crystal selection directly supports concepts explored in our blog:
 
-- **[Crystal-Grid Technologies (Practical)](/blog)**: Hands-on applications and experiments
-- **[Crystal-Grid Technologies (Spiritual)](/blog)**: Consciousness and energy work aspects
-- **[Casimir Effect](/blog/2025/08/18/casimir-effect/)**: Quantum field interactions with crystalline structures
-- **[Tesla Coil](/blog/2025/08/20/tesla-coil/)**: Historical use of crystals in early radio technology
+- **[Crystal-Grid Technologies (Practical)]({{ '/blog' | relative_url }})**: Hands-on applications and experiments
+- **[Crystal-Grid Technologies (Spiritual)]({{ '/blog' | relative_url }})**: Consciousness and energy work aspects
+- **[Casimir Effect]({{ '/blog/2025/08/18/casimir-effect/' | relative_url }})**: Quantum field interactions with crystalline structures
+- **[Tesla Coil]({{ '/blog/2025/08/20/tesla-coil/' | relative_url }})**: Historical use of crystals in early radio technology
 
 ### Quality and Sourcing
 
@@ -112,14 +112,14 @@ Pricing varies based on:
 
 ## Contact for Details
 
-For specific availability, pricing, or custom crystal grid consultations, please contact us through our [Contact page](/contact). We're happy to discuss educational applications and recommend crystals based on your specific research interests.
+For specific availability, pricing, or custom crystal grid consultations, please contact us through our [Contact page]({{ '/contact' | relative_url }}). We're happy to discuss educational applications and recommend crystals based on your specific research interests.
 
 ### Related Products
 
-- [Jewelry](/store/jewelry) featuring these crystals
-- [Ascension Tools](/store/ascension-tools) for advanced energy work
-- [Rodin Coils](/store/rodin-coil) for electromagnetic experiments
+- [Jewelry]({{ '/store/jewelry' | relative_url }}) featuring these crystals
+- [Ascension Tools]({{ '/store/ascension-tools' | relative_url }}) for advanced energy work
+- [Rodin Coils]({{ '/store/rodin-coil' | relative_url }}) for electromagnetic experiments
 
 ---
 
-*All crystals are intended for educational and experimental purposes. We encourage combining crystal work with the scientific concepts explored in our [blog posts](/blog) for a comprehensive understanding of energy technologies.*
+*All crystals are intended for educational and experimental purposes. We encourage combining crystal work with the scientific concepts explored in our [blog posts]({{ '/blog' | relative_url }}) for a comprehensive understanding of energy technologies.*

@@ -20,7 +20,7 @@ Crystals have long been valued for their piezoelectric properties, which can int
 
 Educational Note: Crystals can demonstrate basic principles of vibration, as discussed in our blog on Crystal-Grid Technologies.
 
-[View Crystals](/store/crystals)
+[View Crystals]({{ '/store/crystals' | relative_url }})
 
 #### Jewelry
 
@@ -31,7 +31,7 @@ Handcrafted pieces combining crystals and metals, designed for everyday wear whi
 
 Educational Note: Jewelry serves as a portable reminder of ascension principles, echoing themes in biofield technologies.
 
-[View Jewelry](/store/jewelry)
+[View Jewelry]({{ '/store/jewelry' | relative_url }})
 
 #### Ascension Tools
 
@@ -44,10 +44,10 @@ Specialized items based on advanced designs, available in limited quantities.
 
 Educational Note: These tools tie directly to blog topics like Rodin Coils and Tensor Rings, offering tangible ways to engage with the concepts.
 
-[View Ascension Tools](/store/ascension-tools)
+[View Ascension Tools]({{ '/store/ascension-tools' | relative_url }})
 
 ## Contact for Pricing
 
-For pricing and availability, please contact us via the form on our [Contact page](/contact). We aim to keep this space educational and accessible.
+For pricing and availability, please contact us via the form on our [Contact page]({{ '/contact' | relative_url }}). We aim to keep this space educational and accessible.
 
-> **Educational Focus:** All items are intended for educational and experimental purposes. We encourage combining these tools with the concepts explored in our [blog posts](/blog) for a deeper understanding of energy technologies.
+> **Educational Focus:** All items are intended for educational and experimental purposes. We encourage combining these tools with the concepts explored in our [blog posts]({{ '/blog' | relative_url }}) for a deeper understanding of energy technologies.

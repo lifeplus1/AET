@@ -59,11 +59,11 @@ Welcome to our educational blog, where we explore the fascinating intersection o
 
 ## Explore Related Topics
 
-Interested in putting theory into practice? Visit our [Store](/store) to explore tools and technologies that complement these blog topics, including:
+Interested in putting theory into practice? Visit our [Store]({{ '/store' | relative_url }}) to explore tools and technologies that complement these blog topics, including:
 
-- [Rodin Coils](/store/rodin-coil) for electromagnetic experimentation
-- [Crystals](/store/crystals) for vibrational studies  
-- [Ascension Tools](/store/ascension-tools) for advanced energy work
+- [Rodin Coils]({{ '/store/rodin-coil' | relative_url }}) for electromagnetic experimentation
+- [Crystals]({{ '/store/crystals' | relative_url }}) for vibrational studies  
+- [Ascension Tools]({{ '/store/ascension-tools' | relative_url }}) for advanced energy work
 
 <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/filter.js' | relative_url }}"></script>

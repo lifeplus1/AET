@@ -113,9 +113,9 @@ Welcome to our comprehensive resource center. Here you'll find additional materi
 While this resource center is freely accessible, you can support our educational mission by:
 
 - Sharing our content with others interested in these topics
-- Exploring our [Store](/store) for hands-on learning tools
+- Exploring our [Store]({{ '/store' | relative_url }}) for hands-on learning tools
 - Contacting us with questions or suggestions for additional resources
-- Following our [Blog](/blog) for the latest insights and discoveries
+- Following our [Blog]({{ '/blog' | relative_url }}) for the latest insights and discoveries
 
 ---
 

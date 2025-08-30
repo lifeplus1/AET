@@ -24,7 +24,7 @@ Our signature product, based on Marko Rodin's revolutionary Vortex-Based Mathema
 - **Materials**: High-quality copper wire on non-conductive toroidal form
 - **Size Options**: 6-inch, 8-inch, and 12-inch diameter versions
 - **Educational Applications**: Electromagnetic field studies, resonance experiments, meditation enhancement
-- **Connection**: Direct implementation of concepts from our [Rodin Coils blog posts](/blog/2025/08/19/rodin-coils-practical/)
+- **Connection**: Direct implementation of concepts from our [Rodin Coils blog posts]({{ '/blog/2025/08/19/rodin-coils-practical/' | relative_url }})
 
 ##### Advanced Rodin Coil System
 
@@ -43,7 +43,7 @@ Sacred geometry meets practical energy work in this elegant toroidal form.
 - **Materials**: Options in wood, metal, or crystal-infused resin
 - **Size**: 8-inch outer diameter, proportioned according to golden ratio
 - **Applications**: Meditation focus, energy flow visualization, sacred geometry study
-- **Connection**: Embodies toroidal mathematics discussed in our [consciousness studies](/blog)
+- **Connection**: Embodies toroidal mathematics discussed in our [consciousness studies]({{ '/blog' | relative_url }})
 
 ##### Meditation ABHA Torus Set
 
@@ -62,7 +62,7 @@ An experimental coil design inspired by advanced propulsion theories and conscio
 - **Theory**: Combines Tesla coil principles with modern consciousness research
 - **Applications**: Consciousness exploration, field effect studies, experimental research
 - **Size**: 10-inch diameter base with variable height spiral
-- **Connection**: Bridges our [Tesla Coil](/blog/2025/08/20/tesla-coil/) and consciousness research content
+- **Connection**: Bridges our [Tesla Coil]({{ '/blog/2025/08/20/tesla-coil/' | relative_url }}) and consciousness research content
 
 ##### Educational Starship Coil Kit
 
@@ -169,11 +169,11 @@ All tools come with comprehensive safety information:
 
 Our tools directly implement concepts from our educational posts:
 
-- **[Rodin Coils (Practical)](/blog/2025/08/19/rodin-coils-practical/)**: Hands-on applications and experiments
-- **[Rodin Coils (Spiritual)](/blog)**: Consciousness and meditation applications
-- **[Tesla Coil](/blog/2025/08/20/tesla-coil/)**: Historical foundation and electrical principles
-- **[Casimir Effect](/blog/2025/08/18/casimir-effect/)**: Quantum field interactions and zero-point energy
-- **[Sacred Geometry](/blog)**: Mathematical principles in physical form
+- **[Rodin Coils (Practical)]({{ '/blog/2025/08/19/rodin-coils-practical/' | relative_url }})**: Hands-on applications and experiments
+- **[Rodin Coils (Spiritual)]({{ '/blog' | relative_url }})**: Consciousness and meditation applications
+- **[Tesla Coil]({{ '/blog/2025/08/20/tesla-coil/' | relative_url }})**: Historical foundation and electrical principles
+- **[Casimir Effect]({{ '/blog/2025/08/18/casimir-effect/' | relative_url }})**: Quantum field interactions and zero-point energy
+- **[Sacred Geometry]({{ '/blog' | relative_url }})**: Mathematical principles in physical form
 
 ### Custom Development
 
@@ -214,14 +214,14 @@ Our tools represent significant research and development investments:
 
 ## Contact for Details
 
-For specific availability, custom configurations, or detailed technical specifications, please contact us through our [Contact page](/contact). We're happy to discuss how these tools can support your research interests and consciousness exploration.
+For specific availability, custom configurations, or detailed technical specifications, please contact us through our [Contact page]({{ '/contact' | relative_url }}). We're happy to discuss how these tools can support your research interests and consciousness exploration.
 
 ### Related Products
 
-- [Crystals](/store/crystals) to enhance tool effectiveness
-- [Jewelry](/store/jewelry) for personal energy work
-- [Rodin Coils](/store/rodin-coil) for detailed coil information
+- [Crystals]({{ '/store/crystals' | relative_url }}) to enhance tool effectiveness
+- [Jewelry]({{ '/store/jewelry' | relative_url }}) for personal energy work
+- [Rodin Coils]({{ '/store/rodin-coil' | relative_url }}) for detailed coil information
 
 ---
 
-*All tools are intended for educational and experimental purposes. We encourage combining tool work with the theoretical concepts explored in our [blog posts](/blog) for comprehensive understanding. Results may vary and depend on many factors including user experience, environmental conditions, and individual sensitivity.*
+*All tools are intended for educational and experimental purposes. We encourage combining tool work with the theoretical concepts explored in our [blog posts]({{ '/blog' | relative_url }}) for comprehensive understanding. Results may vary and depend on many factors including user experience, environmental conditions, and individual sensitivity.*

@@ -12,7 +12,7 @@ Our jewelry collection combines beautiful craftsmanship with educational value, 
 
 Jewelry has been used throughout history not just for decoration, but as a means of carrying beneficial energies close to the body. Our collection focuses on pieces that demonstrate principles explored in our blog posts, particularly those related to biofield technologies, crystal resonance, and sacred geometry.
 
-As discussed in our research on [biofield technologies](/blog) and consciousness studies, wearing certain materials close to the body may influence our energy patterns and awareness. Our jewelry is designed to support these explorations while maintaining an elegant, wearable aesthetic.
+As discussed in our research on [biofield technologies]({{ '/blog' | relative_url }}) and consciousness studies, wearing certain materials close to the body may influence our energy patterns and awareness. Our jewelry is designed to support these explorations while maintaining an elegant, wearable aesthetic.
 
 ### Featured Collections
 
@@ -25,14 +25,14 @@ Our pendant designs focus on showcasing individual crystals in settings that enh
 - **Design**: Simple wire-wrapped settings that allow maximum crystal exposure
 - **Educational Value**: Demonstrates piezoelectric properties when worn during meditation
 - **Variations**: Pointed terminated crystals, tumbled stones, carved geometric forms
-- **Connection**: Supports studies in energy amplification discussed in our [Tesla Coil](/blog/2025/08/20/tesla-coil/) research
+- **Connection**: Supports studies in energy amplification discussed in our [Tesla Coil]({{ '/blog/2025/08/20/tesla-coil/' | relative_url }}) research
 
 ##### Amethyst Sacred Geometry Pendants
 
 - **Design**: Crystals set within geometric frameworks (triangles, hexagons, circles)
 - **Educational Value**: Explores how geometric forms influence energy patterns
 - **Variations**: Flower of Life settings, Platonic solid frameworks, custom geometric designs
-- **Connection**: Relates to sacred geometry principles found in [Rodin Coils](/blog/2025/08/19/rodin-coils-practical/) and toroidal mathematics
+- **Connection**: Relates to sacred geometry principles found in [Rodin Coils]({{ '/blog/2025/08/19/rodin-coils-practical/' | relative_url }}) and toroidal mathematics
 
 ##### Multi-Stone Harmony Pendants
 
@@ -143,11 +143,11 @@ All crystals used in our jewelry meet the same quality standards as our individu
 
 Our jewelry directly supports concepts explored in our educational content:
 
-- **[Biofield Technologies](/blog)**: Practical exploration of energy fields around the body
-- **[Crystal-Grid Technologies](/blog)**: Miniaturized grid principles in wearable form
-- **[Tesla Coil](/blog/2025/08/20/tesla-coil/)**: Historical precedents for crystal-metal energy combinations
-- **[Sacred Geometry](/blog)**: Mathematical principles expressed in wearable art
-- **[Casimir Effect](/blog/2025/08/18/casimir-effect/)**: Quantum field interactions with worn crystals
+- **[Biofield Technologies]({{ '/blog' | relative_url }})**: Practical exploration of energy fields around the body
+- **[Crystal-Grid Technologies]({{ '/blog' | relative_url }})**: Miniaturized grid principles in wearable form
+- **[Tesla Coil]({{ '/blog/2025/08/20/tesla-coil/' | relative_url }})**: Historical precedents for crystal-metal energy combinations
+- **[Sacred Geometry]({{ '/blog' | relative_url }})**: Mathematical principles expressed in wearable art
+- **[Casimir Effect]({{ '/blog/2025/08/18/casimir-effect/' | relative_url }})**: Quantum field interactions with worn crystals
 
 ### Care and Maintenance
 
@@ -185,14 +185,14 @@ Jewelry pricing reflects:
 
 ## Contact for Details
 
-For specific availability, custom design consultations, or questions about the educational applications of our jewelry, please contact us through our [Contact page](/contact). We're happy to discuss how different pieces might support your energy studies and consciousness exploration.
+For specific availability, custom design consultations, or questions about the educational applications of our jewelry, please contact us through our [Contact page]({{ '/contact' | relative_url }}). We're happy to discuss how different pieces might support your energy studies and consciousness exploration.
 
 ### Related Products
 
-- [Crystals](/store/crystals) for individual specimens and study
-- [Ascension Tools](/store/ascension-tools) for advanced energy work
-- [Rodin Coils](/store/rodin-coil) for electromagnetic experiments
+- [Crystals]({{ '/store/crystals' | relative_url }}) for individual specimens and study
+- [Ascension Tools]({{ '/store/ascension-tools' | relative_url }}) for advanced energy work
+- [Rodin Coils]({{ '/store/rodin-coil' | relative_url }}) for electromagnetic experiments
 
 ---
 
-*All jewelry is intended for educational and personal exploration purposes. We encourage combining jewelry work with the concepts explored in our [blog posts](/blog) for a comprehensive understanding of energy technologies and consciousness studies.*
+*All jewelry is intended for educational and personal exploration purposes. We encourage combining jewelry work with the concepts explored in our [blog posts]({{ '/blog' | relative_url }}) for a comprehensive understanding of energy technologies and consciousness studies.*

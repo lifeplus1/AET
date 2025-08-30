@@ -76,6 +76,6 @@ To learn more about zero-point energy:
 - Explore alternative energy research communities and forums
 - Follow peer-reviewed research on vacuum energy and the Casimir Effect
 - Consider the philosophical implications of quantum mechanics for consciousness and reality
-- Investigate related technologies like those explored in our posts on the [Casimir Effect](/blog/2025/08/18/casimir-effect/) and [Tesla Coils](/blog/2025/08/20/tesla-coil/)
+- Investigate related technologies like those explored in our posts on the [Casimir Effect]({{ '/blog/2025/08/18/casimir-effect/' | relative_url }}) and [Tesla Coils]({{ '/blog/2025/08/20/tesla-coil/' | relative_url }})
 
-[Explore energy-related tools and crystals in our Store](/store/)
+[Explore energy-related tools and crystals in our Store]({{ '/store/' | relative_url }})
