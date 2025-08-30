@@ -6,7 +6,7 @@ baseurl: "/AET"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+# theme: minima - Disabled to use custom layouts and CSS
 
 # Collections
 collections:
