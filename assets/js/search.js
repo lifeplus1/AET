@@ -116,36 +116,59 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Add CSS for search results
+// Add CSS for search results with cosmic theme
 const searchCSS = `
 .search-results-container {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 1em;
+  background: rgba(26, 26, 46, 0.9);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.5em;
   margin-top: 1em;
   max-height: 400px;
   overflow-y: auto;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
 }
 
 .search-result {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   padding: 1em 0;
+  transition: all 0.3s ease;
 }
 
 .search-result:last-child {
   border-bottom: none;
 }
 
+.search-result:hover {
+  background: rgba(212, 175, 55, 0.05);
+  padding-left: 1em;
+  border-radius: 8px;
+}
+
 .search-result h3 {
   margin: 0 0 0.5em 0;
   font-size: 1.2em;
+  font-family: 'Playfair Display', serif;
+}
+
+.search-result h3 a {
+  color: #D4AF37;
+  transition: all 0.3s ease;
+}
+
+.search-result h3 a:hover {
+  color: #FF4500;
+  text-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
 }
 
 .search-meta {
-  color: #666;
+  color: rgba(245, 232, 199, 0.7);
   font-size: 0.9em;
   margin: 0 0 0.5em 0;
+}
+
+.search-result p {
+  color: #F5E8C7;
 }
 `;
 

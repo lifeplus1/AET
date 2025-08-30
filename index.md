@@ -1,15 +1,21 @@
 ---
 layout: default
 title: Welcome to Ascension Energy Technologies
+description: Exploring the frontiers of energy technologies, consciousness, and quantum phenomena through education and practical tools.
 ---
 
-## Welcome to Ascension Energy Technologies
+<div class="hero-section">
+  <h1>Welcome to Ascension Energy Technologies</h1>
+  <p class="hero-tagline">Exploring Energy, Consciousness, and the Mysteries of the Universe</p>
+</div>
 
 ## Exploring Energy, Consciousness, and Ascension
 
-Ascension Energy Technologies is a platform dedicated to fostering understanding of innovative energy concepts, historical discoveries, and their potential role in personal and collective growth. Through our educational blog, we delve into topics like electromagnetic resonance, biofields, and vibrational physics, drawing from visionaries such as Nikola Tesla and Marko Rodin. Our mission is to inspire curiosity and exploration, providing insights grounded in science, history, and philosophy.
+Ascension Energy Technologies is a platform dedicated to fostering understanding of innovative energy concepts, historical discoveries, and their potential role in personal and collective growth. Through our educational blog, we delve into topics like electromagnetic resonance, biofields, and vibrational physics, drawing from visionaries such as **Nikola Tesla** and **Marko Rodin**. 
 
-Whether you're a student of alternative physics, a spiritual seeker, or simply intrigued by the mysteries of energy, our content aims to illuminate these fascinating fields without commercial pressure.
+Our mission is to inspire curiosity and exploration, providing insights grounded in science, history, and philosophy—without commercial pressure, but with deep respect for the mysteries that surround us.
+
+Whether you're a student of alternative physics, a spiritual seeker, or simply intrigued by the mysteries of energy, our content aims to illuminate these fascinating fields with wonder and scientific rigor.
 
 ### Featured Blog Posts
 

@@ -9,6 +9,11 @@
   <!-- SEO -->
   {% seo %}
   
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   
@@ -19,29 +24,51 @@
 </head>
 <body>
   <header>
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
       <div class="nav-container">
-        <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
-        <ul class="nav-links">
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-          <li><a href="{{ '/store/' | relative_url }}">Store</a></li>
-          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-          <li><a href="{{ '/resources/' | relative_url }}">Resources</a></li>
+        <a href="{{ '/' | relative_url }}" class="logo" aria-label="Ascension Energy Technologies Home">
+          <img src="{{ '/assets/images/Logo (Chat-GPT Version).png' | relative_url }}" alt="{{ site.title }}" class="logo-image">
+          <span class="logo-text">{{ site.title }}</span>
+        </a>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="main-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        
+        <ul class="nav-links" id="main-menu" role="menubar">
+          <li role="none"><a href="{{ '/' | relative_url }}" role="menuitem" {% if page.url == "/" %}aria-current="page" class="active"{% endif %}>Home</a></li>
+          <li role="none"><a href="{{ '/blog/' | relative_url }}" role="menuitem" {% if page.url contains "/blog" %}aria-current="page" class="active"{% endif %}>Blog</a></li>
+          <li role="none"><a href="{{ '/store/' | relative_url }}" role="menuitem" {% if page.url contains "/store" %}aria-current="page" class="active"{% endif %}>Store</a></li>
+          <li role="none"><a href="{{ '/about/' | relative_url }}" role="menuitem" {% if page.url contains "/about" %}aria-current="page" class="active"{% endif %}>About</a></li>
+          <li role="none"><a href="{{ '/contact/' | relative_url }}" role="menuitem" {% if page.url contains "/contact" %}aria-current="page" class="active"{% endif %}>Contact</a></li>
+          <li role="none"><a href="{{ '/resources/' | relative_url }}" role="menuitem" {% if page.url contains "/resources" %}aria-current="page" class="active"{% endif %}>Resources</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main class="main-content">
     {{ content }}
   </main>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
 
   <footer>
     <div class="footer-content">
       <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
       <p>Exploring the frontiers of energy technologies and consciousness.</p>
+      <div class="footer-links">
+        <a href="{{ '/contact/' | relative_url }}">Contact</a> | 
+        <a href="{{ '/resources/' | relative_url }}">Resources</a> | 
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      </div>
     </div>
   </footer>
 
@@ -57,6 +84,126 @@
     gtag('js', new Date());
 
     gtag('config', 'G-TEMDJS3TTJ');
+  </script>
+
+  <!-- Mobile Navigation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const header = document.querySelector('header');
+      const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      const backToTopBtn = document.querySelector('.back-to-top');
+      
+      // Smart navbar scroll behavior
+      let lastScrollY = window.scrollY;
+      let ticking = false;
+      
+      function updateNavbar() {
+        const scrollY = window.scrollY;
+        const scrollDirection = scrollY > lastScrollY ? 'down' : 'up';
+        const scrollThreshold = 100;
+        const backToTopThreshold = 300;
+        
+        // Add scrolled class when past threshold
+        if (scrollY > scrollThreshold) {
+          header.classList.add('navbar-scrolled');
+        } else {
+          header.classList.remove('navbar-scrolled');
+        }
+        
+        // Hide navbar when scrolling down, show when scrolling up
+        if (scrollY > scrollThreshold) {
+          if (scrollDirection === 'down' && !navLinks.classList.contains('active')) {
+            header.classList.add('navbar-hidden');
+          } else if (scrollDirection === 'up') {
+            header.classList.remove('navbar-hidden');
+          }
+        } else {
+          header.classList.remove('navbar-hidden');
+        }
+        
+        // Show/hide back to top button
+        if (backToTopBtn) {
+          if (scrollY > backToTopThreshold) {
+            backToTopBtn.classList.add('visible');
+          } else {
+            backToTopBtn.classList.remove('visible');
+          }
+        }
+        
+        lastScrollY = scrollY;
+        ticking = false;
+      }
+      
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(updateNavbar);
+          ticking = true;
+        }
+      }
+      
+      // Throttled scroll listener
+      window.addEventListener('scroll', requestTick, { passive: true });
+      
+      // Back to top functionality
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+      
+      // Mobile menu functionality
+      if (mobileMenuToggle && navLinks) {
+        mobileMenuToggle.addEventListener('click', function() {
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          
+          // Toggle aria-expanded
+          this.setAttribute('aria-expanded', !isExpanded);
+          
+          // Toggle active class on nav-links
+          navLinks.classList.toggle('active');
+          
+          // Ensure navbar is visible when mobile menu is open
+          if (!isExpanded) {
+            header.classList.remove('navbar-hidden');
+          }
+          
+          // Update aria-label for screen readers
+          this.setAttribute('aria-label', isExpanded ? 'Open mobile menu' : 'Close mobile menu');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            navLinks.classList.remove('active');
+            mobileMenuToggle.setAttribute('aria-label', 'Open mobile menu');
+          }
+        });
+        
+        // Close menu when pressing Escape key
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            navLinks.classList.remove('active');
+            mobileMenuToggle.setAttribute('aria-label', 'Open mobile menu');
+            mobileMenuToggle.focus();
+          }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+          if (window.innerWidth > 768) {
+            navLinks.classList.remove('active');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            mobileMenuToggle.setAttribute('aria-label', 'Open mobile menu');
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>

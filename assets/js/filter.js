@@ -76,13 +76,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Add CSS for filtering
+// Add CSS for filtering with cosmic theme
 const filterCSS = `
 .posts-count {
-  color: #666;
+  color: rgba(245, 232, 199, 0.8);
   font-style: italic;
   margin: 1em 0;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .post-card {
@@ -102,11 +103,12 @@ const filterCSS = `
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
   transition: left 0.5s;
 }
 
-.filter-btn:hover::before {
+.filter-btn:hover::before,
+.filter-btn.active::before {
   left: 100%;
 }
 
@@ -117,7 +119,11 @@ const filterCSS = `
   
   .filter-btn {
     font-size: 0.9em;
-    padding: 0.4em 0.8em;
+    padding: 6px 12px;
+  }
+  
+  .posts-count {
+    font-size: 0.9em;
   }
 }
 `;
