@@ -38,7 +38,7 @@ Welcome to our educational blog, where we explore the fascinating intersection o
           {% endif %}
         </div>
       </header>
-      
+
       <div class="post-excerpt">
         {{ post.excerpt | strip_html | truncatewords: 50 }}
       </div>

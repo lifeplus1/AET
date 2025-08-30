@@ -1,7 +1,7 @@
 title: Ascension Energy Technologies
 description: Educational blog on ascension energy technologies with a minimal store for crystals and tools
-baseurl: ""
-url: ""
+url: "https://lifeplus1.github.io"
+baseurl: "/AET"
 
 # Build settings
 markdown: kramdown

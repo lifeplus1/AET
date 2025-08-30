@@ -24,28 +24,36 @@ We strive to bridge the gap between mainstream science and alternative energy re
 Our approach is grounded in several key principles:
 
 ### Scientific Rigor
+
 While we explore alternative theories and technologies, we maintain respect for scientific methodology and encourage critical thinking in all our content.
 
 ### Historical Perspective
+
 We honor the contributions of pioneering inventors and researchers like Nikola Tesla, Marko Rodin, and Viktor Grebennikov, examining their work within both historical and contemporary contexts.
 
 ### Practical Application
+
 Beyond theory, we provide opportunities for hands-on exploration through carefully selected tools and technologies available in our store.
 
 ### Non-Commercial Focus
+
 Our primary goal is education, not sales. All content is designed to inform and inspire, avoiding sales-driven narratives.
 
 ## What We Offer
 
 ### Educational Blog
+
 Our blog covers a wide range of topics including:
+
 - Quantum phenomena and their implications for consciousness
 - Historical energy technologies and their modern relevance
 - Practical guides for experimentation with energy devices
 - Spiritual and metaphysical perspectives on energy work
 
 ### Curated Store
+
 Our store features a carefully selected inventory of:
+
 - **Crystals** for vibrational studies and energy work
 - **Jewelry** designed with energetic principles in mind
 - **Ascension Tools** including experimental coils and geometric devices
