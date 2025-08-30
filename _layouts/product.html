@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="product-page">
+  <header class="product-header">
+    <h1 class="product-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="product-content">
+    {{ content }}
+  </div>
+
+  <div class="product-actions">
+    {% if page.price %}
+    <button class="snipcart-add-item btn-primary"
+      data-item-id="{{ page.slug | default: page.title | slugify }}"
+      data-item-price="{{ page.price }}"
+      data-item-url="{{ page.url | relative_url }}"
+      data-item-name="{{ page.title }}"
+      data-item-description="{{ page.description | default: page.excerpt | strip_html | truncate: 160 }}">
+      Add to Cart - ${{ page.price }}
+    </button>
+    {% endif %}
+  </div>
+</div>
