@@ -25,14 +25,14 @@ Our pendant designs focus on showcasing individual crystals in settings that enh
 - **Design**: Simple wire-wrapped settings that allow maximum crystal exposure
 - **Educational Value**: Demonstrates piezoelectric properties when worn during meditation
 - **Variations**: Pointed terminated crystals, tumbled stones, carved geometric forms
-- **Connection**: Supports studies in energy amplification discussed in our [Tesla Coil](/blog/tesla-coil) research
+- **Connection**: Supports studies in energy amplification discussed in our [Tesla Coil](/blog/2025/08/20/tesla-coil/) research
 
 ##### Amethyst Sacred Geometry Pendants
 
 - **Design**: Crystals set within geometric frameworks (triangles, hexagons, circles)
 - **Educational Value**: Explores how geometric forms influence energy patterns
 - **Variations**: Flower of Life settings, Platonic solid frameworks, custom geometric designs
-- **Connection**: Relates to sacred geometry principles found in [Rodin Coils](/blog) and toroidal mathematics
+- **Connection**: Relates to sacred geometry principles found in [Rodin Coils](/blog/2025/08/19/rodin-coils-practical/) and toroidal mathematics
 
 ##### Multi-Stone Harmony Pendants
 
@@ -145,9 +145,9 @@ Our jewelry directly supports concepts explored in our educational content:
 
 - **[Biofield Technologies](/blog)**: Practical exploration of energy fields around the body
 - **[Crystal-Grid Technologies](/blog)**: Miniaturized grid principles in wearable form
-- **[Tesla Coil](/blog/tesla-coil)**: Historical precedents for crystal-metal energy combinations
+- **[Tesla Coil](/blog/2025/08/20/tesla-coil/)**: Historical precedents for crystal-metal energy combinations
 - **[Sacred Geometry](/blog)**: Mathematical principles expressed in wearable art
-- **[Casimir Effect](/blog/casimir-effect)**: Quantum field interactions with worn crystals
+- **[Casimir Effect](/blog/2025/08/18/casimir-effect/)**: Quantum field interactions with worn crystals
 
 ### Care and Maintenance
 

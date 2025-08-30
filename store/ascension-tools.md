@@ -24,7 +24,7 @@ Our signature product, based on Marko Rodin's revolutionary Vortex-Based Mathema
 - **Materials**: High-quality copper wire on non-conductive toroidal form
 - **Size Options**: 6-inch, 8-inch, and 12-inch diameter versions
 - **Educational Applications**: Electromagnetic field studies, resonance experiments, meditation enhancement
-- **Connection**: Direct implementation of concepts from our [Rodin Coils blog posts](/blog)
+- **Connection**: Direct implementation of concepts from our [Rodin Coils blog posts](/blog/2025/08/19/rodin-coils-practical/)
 
 ##### Advanced Rodin Coil System
 
@@ -62,7 +62,7 @@ An experimental coil design inspired by advanced propulsion theories and conscio
 - **Theory**: Combines Tesla coil principles with modern consciousness research
 - **Applications**: Consciousness exploration, field effect studies, experimental research
 - **Size**: 10-inch diameter base with variable height spiral
-- **Connection**: Bridges our [Tesla Coil](/blog/tesla-coil) and consciousness research content
+- **Connection**: Bridges our [Tesla Coil](/blog/2025/08/20/tesla-coil/) and consciousness research content
 
 ##### Educational Starship Coil Kit
 
@@ -169,10 +169,10 @@ All tools come with comprehensive safety information:
 
 Our tools directly implement concepts from our educational posts:
 
-- **[Rodin Coils (Practical)](/blog)**: Hands-on applications and experiments
+- **[Rodin Coils (Practical)](/blog/2025/08/19/rodin-coils-practical/)**: Hands-on applications and experiments
 - **[Rodin Coils (Spiritual)](/blog)**: Consciousness and meditation applications
-- **[Tesla Coil](/blog/tesla-coil)**: Historical foundation and electrical principles
-- **[Casimir Effect](/blog/casimir-effect)**: Quantum field interactions and zero-point energy
+- **[Tesla Coil](/blog/2025/08/20/tesla-coil/)**: Historical foundation and electrical principles
+- **[Casimir Effect](/blog/2025/08/18/casimir-effect/)**: Quantum field interactions and zero-point energy
 - **[Sacred Geometry](/blog)**: Mathematical principles in physical form
 
 ### Custom Development

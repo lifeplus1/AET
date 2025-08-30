@@ -21,7 +21,7 @@ As discussed in our [Crystal-Grid Technologies blog posts](/blog), crystals can 
 - **Properties**: Amplification, clarity, programmability
 - **Educational Use**: Excellent for studying piezoelectric effects and energy amplification
 - **Size Range**: Small specimens (1-2 inches) to larger display pieces
-- **Connection**: Referenced in our [Casimir Effect](/blog/casimir-effect) post for its quantum resonance properties
+- **Connection**: Referenced in our [Casimir Effect](/blog/2025/08/18/casimir-effect/) post for its quantum resonance properties
 
 #### Amethyst
 
@@ -89,8 +89,8 @@ Our crystal selection directly supports concepts explored in our blog:
 
 - **[Crystal-Grid Technologies (Practical)](/blog)**: Hands-on applications and experiments
 - **[Crystal-Grid Technologies (Spiritual)](/blog)**: Consciousness and energy work aspects
-- **[Casimir Effect](/blog/casimir-effect)**: Quantum field interactions with crystalline structures
-- **[Tesla Coil](/blog/tesla-coil)**: Historical use of crystals in early radio technology
+- **[Casimir Effect](/blog/2025/08/18/casimir-effect/)**: Quantum field interactions with crystalline structures
+- **[Tesla Coil](/blog/2025/08/20/tesla-coil/)**: Historical use of crystals in early radio technology
 
 ### Quality and Sourcing
 
